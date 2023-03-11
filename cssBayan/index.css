@@ -24,6 +24,8 @@ body {
   border-top: 2px solid white;
 }
 
+
+
 .acc-label {
   display: flex;
   padding: 25px 16px;
@@ -48,7 +50,7 @@ body {
 .acc-item-title-wrapper::after {
   content: '\271B';
   opacity: 0;
-  transition: opacity 1s;
+  transition: 0.7s;
 }
 
 .acc-list:hover .acc-item-title-wrapper::after {
@@ -77,10 +79,14 @@ body {
   transition: 0.7s;
 }
 
-.acc-label:active .acc-item-title-wrapper {
-  color: #6c44ff;
+.acc-label:hover {
+  cursor: url('./assets/cursor-pointer.svg'), pointer;
 }
 
+.acc-label:active {
+  color: #6c44ff;
+  cursor: url('./assets/cursor-clicker.svg'), pointer;
+}
 
 @media (max-width: 1920px) {
   .acc-title {
